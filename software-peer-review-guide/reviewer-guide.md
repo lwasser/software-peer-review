@@ -1,5 +1,19 @@
 # Guide for Reviewers
 
+
+## Why review a package for pyOpenSci? <Move to reviewer guide??>
+
+We hope that you choose to review **to give back to the rOpenSci and scientific communities.**  Our mission to expand the ability to efficiently use scientific data and promote a culture of open reproducible is only possible through the volunteer efforts of community members like you.
+
+-   Peer review is a two-way conversation. By reviewing packages, you'll have the chance to **continue to learn development practices from authors and other reviewers**.
+-   The open nature of our review process allows you to **network and meet colleagues and collaborators** through the review process. Our community is friendly and filled with supportive members expert in Python package development, a diversity of science domains and computer science.
+
+### Volunteer to review for us
+
+-   To volunteer to be one of our reviewers, fill out [this short form](https://forms.gle/9dv99gri6XKNU8177). In the form you will provide your contact information and areas of expertise. We are always looking for more reviewers with both general package-writing experience and domain expertise in the fields where packages are used. Some of our reviewers focus on package usability and documentation. This allows you to review even if you don't have strong technical background. We will pair you with a second reviewer that can focus more on the technical aspect of the review. 
+
+
+
 ```{epigraph}
 Thank you for taking the time to review a package for pyOpenSci and for contributing
 to making open source scientific software easier to use by the community! If you
