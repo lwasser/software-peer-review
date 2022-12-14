@@ -162,3 +162,20 @@ are usually not accepted by JOSS. Be sure to review JOSS's
 [submission requirements](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements) 
 before writing up a paper about your package.
 ```
+
+
+
+
+
+
+## TODO move to EDIT guide?
+### If you submit to pyOpenSci You Can Also Be Accepted by JOSS
+We have a strong partnership with JOSS (Journal of Open Source Software); JOSS
+accepts our review as their own. If your package is within JOSS' scope you can 
+then submit it to JOSS, linking to the accepted pyOpenSci review. Note that
+JOSS won't accept packages that are don't have research applications such as 
+API wrappers. JOSS will then accept our review (you will not need a second 
+review with JOSS!). JOSS will review your paper and you will get a JOSS badge 
+to add next to your pyOpenSci badge of review. And a cross-ref enabled DOI.
+
+
