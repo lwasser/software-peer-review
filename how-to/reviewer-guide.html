@@ -59,14 +59,8 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-141260825-1"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'UA-141260825-1');
-            </script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/reviewer-guide';</script>
+    <script src="../_static/matomo.js"></script>
     <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/how-to/reviewer-guide.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -653,7 +647,9 @@ Package structure should follow general community best-practices. In general ple
 - [ ] **Installation:** Installation succeeds as documented.
 - [ ] **Functionality:** Any functional claims of the software been confirmed.
 - [ ] **Performance:** Any performance claims of the software been confirmed.
-- [ ] **Automated tests:** Tests cover essential functions of the package and a reasonable range of inputs and conditions. All tests pass on the local machine.
+- [ ] **Automated tests:**
+  - [ ] All tests pass on the reviewer&#39;s local machine for the package version submitted by the author. Ideally this should be a tagged version making it easy for reviewers to install.
+  - [ ] Tests cover essential functions of the package and a reasonable range of inputs and conditions.
 - [ ] **Continuous Integration:** Has continuous integration setup (We suggest using Github actions but any CI platform is acceptable for review)
 - [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/python-package-guide).
     A few notable highlights to look at:
@@ -710,6 +706,13 @@ in the review template, please also provide general comments addressing the foll
 </li>
 </ul>
 <p>If you have your own relevant data/problem that you could use the package to solve, work through it with the package. You may find rough edges and use-cases the author didn’t think about.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Some maintainers do not ship the tests with their package.
+This means that the dependencies for testing may be missing.
+Check to have at least pytest installed.
+Also, when cloning the repository to run the tests, please check the cloned version aligns with the submitted one.</p>
+</div>
 </section>
 </section>
 <section id="submit-your-review">

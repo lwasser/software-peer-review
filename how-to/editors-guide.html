@@ -59,14 +59,8 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-141260825-1"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'UA-141260825-1');
-            </script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/editors-guide';</script>
+    <script src="../_static/matomo.js"></script>
     <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/how-to/editors-guide.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -675,8 +669,8 @@ Repository Link:  REPO-LINK
 Version submitted:  VERSION-SUBMITTED
 </pre></div>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="note admonition">
+<p class="admonition-title">Editor in Chief checks for structure &amp; scope should be completed first</p>
 <p>The editor in chief who initially engaged with this review should have already evaluated the package level Editor Checks section for <code class="docutils literal notranslate"><span class="pre">Fit</span></code>, <code class="docutils literal notranslate"><span class="pre">Automated</span> <span class="pre">Tests</span></code>, <code class="docutils literal notranslate"><span class="pre">Documentation</span></code>, <code class="docutils literal notranslate"><span class="pre">License</span></code>, and <code class="docutils literal notranslate"><span class="pre">Repository</span></code>.</p>
 <p>They also should have checked whether the package is <a class="reference internal" href="../about/package-scope.html"><span class="doc std std-doc">in scope for pyOpenSci</span></a>.
 And whether there is <a class="reference internal" href="../about/package-scope.html#package-overlap"><span class="std std-ref">functionality overlap with functionality of any other existing Python packages</span></a>.</p>
@@ -694,7 +688,7 @@ about how to respond.</p>
 This step ensures that the package is ready to be reviewed. It also ensures that
 we are using our volunteer reviewer time effectively.</p>
 <ul class="simple">
-<li><p>Add a comment to the issue that contains a copy of the Editor Response template (see below) filled out with your response to the checks that begin the review.</p></li>
+<li><p>Add a comment to the issue that contains an <strong>exact</strong> copy of the Editor Response template (see below) filled out with your response to the checks that begin the review.</p></li>
 <li><p>Change the label of the issue to <code class="docutils literal notranslate"><span class="pre">2/seeking-reviewer(s)</span></code></p></li>
 </ul>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Editor response to review:</span>
@@ -728,6 +722,14 @@ structure, request changes before assigning reviewers.</strong></p>
 <h3>✔️ 3. Identify Python package reviewers<a class="headerlink" href="#identify-python-package-reviewers" title="Permalink to this heading">#</a></h3>
 <p>Within <strong>one week of responding to the issue as the editor</strong>, identify two people to
 review the Python package.</p>
+<div class="important admonition">
+<p class="admonition-title">Diversity in the editorial &amp; reviewer  team is important</p>
+<p>Diversity is core to the pyOpenSci mission. As such it’s important to have an
+editorial team comprised of an editor + 2 reviewers from diverse backgrounds.</p>
+<p>In your search for reviewers, please ensure ensure that there is diversity
+in the team supporting package review. <a class="reference internal" href="finding-reviewers.html#reviewer-diversity"><span class="std std-ref">Specifically both reviewers should have different backgrounds and different gender-identities whenever possible</span></a>. pyOpenSci <span class="xref myst">supports mentoring new reviewers if needed!</span></p>
+<p><a class="reference internal" href="finding-reviewers.html"><span class="doc std std-doc">Read our finding reviewers guide for more on finding reviewers.</span></a></p>
+</div>
 <p>If you wish, you can use the email template below to invite reviewers.</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Dear [REVIEWER-Name],
 
@@ -777,6 +779,10 @@ moving.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><a class="reference internal" href="finding-reviewers.html"><span class="doc std std-doc">Click here for more information about finding reviewers for a package.</span></a></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure to ask the reviewers for their preferred means of contact, or a reliable way to get in touch with them.</p>
 </div>
 </section>
 <section id="onboard-reviewers">
