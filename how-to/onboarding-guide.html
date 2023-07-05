@@ -137,8 +137,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is blue and yellow following the Python logo"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is blue and yellow following the Python logo"/>`);</script>
+    <img src="../_static/logo-light-mode.png" class="logo__image only-light" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>
+    <script>document.write(`<img src="../_static/logo-dark-mode.png" class="logo__image only-dark" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>`);</script>
   
   
     <p class="title logo__title">Peer Review Guide</p>
@@ -252,7 +252,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/pyopensci/governance" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
             <label class="sr-only">GitHub</label></a>
         </li>
         <li class="nav-item">
@@ -407,7 +407,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/pyopensci/governance" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
             <label class="sr-only">GitHub</label></a>
         </li>
         <li class="nav-item">
@@ -633,7 +633,7 @@ Best,
 </div>
 </section>
 <section id="onboarding-a-new-editor">
-<h2>Onboarding a new editor<a class="headerlink" href="#onboarding-a-new-editor" title="Permalink to this heading">#</a></h2>
+<span id="id1"></span><h2>Onboarding a new editor<a class="headerlink" href="#onboarding-a-new-editor" title="Permalink to this heading">#</a></h2>
 <p>To onboard a new editor:</p>
 <ul class="simple">
 <li><p>Ask them to add themselves to the <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml">pyOpenSci website</a> using a pull request. If they are already listed on our website, then they only need to add
@@ -658,11 +658,17 @@ the <code class="docutils literal notranslate"><span class="pre">title:</span></
 </div>
 <ul class="simple">
 <li><p>Next work with the new editor to create a blog post introducing them which will get <a class="reference external" href="https://www.pyopensci.org/blog">posted on the pyOpenSci blog</a>.</p></li>
-<li><p>If they haven’t already done, ask the new editor turn on <a class="reference external" href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa">two-factor authentication (2FA) for GitHub</a>.</p></li>
+<li><p>If they haven’t already done, ask the new editor to turn on <a class="reference external" href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa">two-factor authentication (2FA) for GitHub</a>.</p></li>
+<li><p>Give editors permissions they will need on GitHub to manage reviews:</p>
+<ul>
+<li><p>For ad-hoc guest editors: invite the editor to the <code class="docutils literal notranslate"><span class="pre">software-submission</span></code> repository
+with “maintain” permissions.</p></li>
+<li><p>For new editors (not ad-hoc): invite editors to the pyOpenSci GitHub organzation
+as a member of the <a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/editorial-board"><code class="docutils literal notranslate"><span class="pre">editorial-board</span></code></a> team. This will give them appropriate permissions and allow them to get team-specific notifications.</p></li>
+</ul>
+</li>
 </ul>
 <!-- do we need this?
-* Invite editors to the pyOpenSci GitHub organization as member, as a member of the [`editors` team](https://github.com/orgs/pyopensci/teams/editors).
-This will give them appropriate permissions and allow them to get team-specific notifications.
 * Editors need access to the AirTable database of software review.
 * * In the Slack workspace they need to be added to the editors team so that `@editors` will ping them too.
  -->
