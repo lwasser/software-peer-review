@@ -30,12 +30,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -47,8 +47,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -76,6 +77,15 @@
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -122,12 +132,14 @@
     <span class="fa-solid fa-bars"></span>
   </label>
   
-  <div class="navbar-header-items__start">
+  
+  <div class=" navbar-header-items__start">
     
       <div class="navbar-item">
   
 
 <a class="navbar-brand logo" href="../index.html">
+  
   
   
   
@@ -146,7 +158,6 @@
 </a></div>
     
   </div>
-  
   
   <div class=" navbar-header-items">
     
@@ -188,27 +199,27 @@
                   </a>
                 </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
                     More
                 </button>
-                <div class="dropdown-menu">
+                <ul id="pst-nav-more-links" class="dropdown-menu">
                     
                 <li class="nav-item">
-                  <a class="nav-link nav-external" href="https://www.pyopensci.org/python-package-guide">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.pyopensci.org/python-package-guide">
                     Python Packaging Guide
                   </a>
                 </li>
                 
 
                 <li class="nav-item">
-                  <a class="nav-link nav-external" href="https://pyopensci.org/governance">
+                  <a class="nav-link dropdown-item nav-external" href="https://pyopensci.org/governance">
                     Governance
                   </a>
                 </li>
                 
-                </div>
-            </div>
+                </ul>
+            </li>
             
   </ul>
 </nav></div>
@@ -220,23 +231,25 @@
       
         <div class="navbar-item navbar-persistent--container">
           
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
         </div>
       
       
         <div class="navbar-item">
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script></div>
@@ -252,8 +265,8 @@ document.write(`
           
           
           
-          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
-            <label class="sr-only">GitHub</label></a>
+          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -264,8 +277,8 @@ document.write(`
           
           
           
-          <a href="https://twitter.com/pyopensci" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter"></i></span>
-            <label class="sr-only">Twitter</label></a>
+          <a href="https://twitter.com/pyopensci" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
         </li>
         <li class="nav-item">
           
@@ -276,8 +289,8 @@ document.write(`
           
           
           
-          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-mastodon"></i></span>
-            <label class="sr-only">Mastodon</label></a>
+          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Mastodon</span></a>
         </li>
 </ul></div>
       
@@ -287,18 +300,20 @@ document.write(`
   
   
     <div class="navbar-persistent--mobile">
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
     </div>
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
       <span class="fa-solid fa-outdent"></span>
     </label>
   
@@ -354,27 +369,27 @@ document.write(`
                   </a>
                 </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
                     More
                 </button>
-                <div class="dropdown-menu">
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
                     
                 <li class="nav-item">
-                  <a class="nav-link nav-external" href="https://www.pyopensci.org/python-package-guide">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.pyopensci.org/python-package-guide">
                     Python Packaging Guide
                   </a>
                 </li>
                 
 
                 <li class="nav-item">
-                  <a class="nav-link nav-external" href="https://pyopensci.org/governance">
+                  <a class="nav-link dropdown-item nav-external" href="https://pyopensci.org/governance">
                     Governance
                   </a>
                 </li>
                 
-                </div>
-            </div>
+                </ul>
+            </li>
             
   </ul>
 </nav></div>
@@ -388,10 +403,10 @@ document.write(`
           <div class="navbar-item">
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script></div>
@@ -407,8 +422,8 @@ document.write(`
           
           
           
-          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
-            <label class="sr-only">GitHub</label></a>
+          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -419,8 +434,8 @@ document.write(`
           
           
           
-          <a href="https://twitter.com/pyopensci" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter"></i></span>
-            <label class="sr-only">Twitter</label></a>
+          <a href="https://twitter.com/pyopensci" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
         </li>
         <li class="nav-item">
           
@@ -431,8 +446,8 @@ document.write(`
           
           
           
-          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-mastodon"></i></span>
-            <label class="sr-only">Mastodon</label></a>
+          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Mastodon</span></a>
         </li>
 </ul></div>
         
@@ -494,8 +509,8 @@ document.write(`
 
 
 
-<nav aria-label="Breadcrumbs">
-  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
       <a href="../index.html" class="nav-link" aria-label="Home">
@@ -505,7 +520,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../about/intro.html" class="nav-link">About the pyOpenSci software peer review process</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">An Overview Of the Peer Review Process</li>
+    <li class="breadcrumb-item active" aria-current="page">An Overview...</li>
   </ul>
 </nav>
 </div>
@@ -531,14 +546,14 @@ from start to finish.</p>
 <section id="step-0-optional-author-submits-pre-submission-inquiry">
 <h3>Step 0. <em>optional</em> : Author submits pre-submission inquiry<a class="headerlink" href="#step-0-optional-author-submits-pre-submission-inquiry" title="Permalink to this heading">#</a></h3>
 <p>A <strong>presubmission inquiry</strong> is useful if you are unsure whether your package
-is in scope. To submit a pre-submission inquiry, open up an issue using the presubmission template in our <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose/">pyopensci/software-review repository</a>. During this time an Editor in Chief will review for scope and performs
-basic checks for package infrastructure</p>
+is in scope. To submit a pre-submission inquiry, open up an issue using the presubmission template in our <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose/">pyopensci/software-review repository</a>. During this time an editor in chief will review for scope and perform
+a basic check for package infrastructure.</p>
 <ul class="simple">
 <li><p>Estimated time: ~1-2 weeks</p></li>
 </ul>
 <p><strong>Below, are the basic checks that your package should have prior to being
-submitted for peer review.</strong> These are the checks that an Editor in Chief or
-and editor will look at when evaluating your package for review.</p>
+submitted for peer review.</strong> These are the checks that an editor in chief and/or
+editor will look at when evaluating your package for review.</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Editor in Chief checks</span>
 
 Hi there! Thank you for submitting your package for pyOpenSci
@@ -550,7 +565,7 @@ Please check our [<span class="nt">Python packaging guide</span>](<span class="n
 below.
 
 <span class="k">- [ ]</span> <span class="gs">**Installation**</span> The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (e.g. conda-forge, bioconda).
-<span class="w">  </span><span class="k">- [ ]</span> The package imports properly into a standard Python environment <span class="sb">`import package-name`</span>.
+<span class="w">  </span><span class="k">- [ ]</span> The package imports properly into a standard Python environment <span class="sb">`import package`</span>.
 <span class="k">- [ ]</span> <span class="gs">**Fit**</span> The package meets criteria for [<span class="nt">fit</span>](<span class="na">https://www.pyopensci.org/software-peer-review/about/package-scope.html#what-types-of-packages-does-pyopensci-review</span>) and [<span class="nt">overlap</span>](<span class="na">https://www.pyopensci.org/software-peer-review/about/package-scope.html#package-overlap</span>).
 <span class="k">- [ ]</span> <span class="gs">**Documentation**</span> The package has sufficient online documentation to allow us to evaluate package function and scope <span class="ge">*without installing the package*</span>. This includes:
 <span class="w">  </span><span class="k">- [ ]</span> User-facing documentation that overviews how to install and start using the package.
@@ -559,7 +574,7 @@ below.
 <span class="k">- [ ]</span> Core GitHub repository Files
 <span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**README**</span> The package has a <span class="sb">`README.md`</span> file with clear explanation of what the package does, instructions on how to install it, and a link to development instructions.
 <span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Contributing File**</span> The package has a <span class="sb">`CONTRIBUTING.md`</span> file that details how to install and contribute to the package.
-<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Code of Conduct**</span> The package has a <span class="sb">`Code of Conduct`</span> file.
+<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Code of Conduct**</span> The package has a <span class="sb">`Code_of_Conduct.md`</span> file.
 <span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**License**</span> The package has an [<span class="nt">OSI approved license</span>](<span class="na">https://opensource.org/licenses</span>).
 NOTE: We prefer that you have development instructions in your documentation too.
 <span class="k">- [ ]</span> <span class="gs">**Issue Submission Documentation**</span> All of the information is filled out in the <span class="sb">`YAML`</span> header of the issue (located at the top of the issue template).
@@ -587,8 +602,8 @@ We appreciate each maintainer of the package filling out this survey individuall
 <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose/">pyopensci/software-review repository</a>.</p>
 </section>
 <section id="editor-in-chief-reviews-package-submission">
-<h3>2. Editor in Chief reviews package submission<a class="headerlink" href="#editor-in-chief-reviews-package-submission" title="Permalink to this heading">#</a></h3>
-<p>The Editor in Chief will review your submission at this point for both package scope and minimal infrastructure criteria
+<h3>2. Editor in chief reviews package submission<a class="headerlink" href="#editor-in-chief-reviews-package-submission" title="Permalink to this heading">#</a></h3>
+<p>The editor in chief will review your submission at this point for both package scope and minimal infrastructure criteria
 (listed above).</p>
 <ul class="simple">
 <li><p>TIME ~2 weeks (or longer if editor requests changes that take the author longer to implement)</p></li>
@@ -597,14 +612,14 @@ We appreciate each maintainer of the package filling out this survey individuall
 <section id="editor-finds-reviewers-for-package">
 <h3>3. Editor finds reviewers for package<a class="headerlink" href="#editor-finds-reviewers-for-package" title="Permalink to this heading">#</a></h3>
 <p>At this point if your package has the minimal infrastructure
-requirements and is in scope the Editor in Chief will assign an editor
-to review your package. That editor will then look
-for reviewers.</p>
+requirements and is in scope, the editor in chief will assign an editor
+to review your package. That editor will then identify
+suitable reviewers.</p>
 <p>Time: ~2-3 weeks</p>
 </section>
 <section id="peer-review-of-submitted-python-package-begins">
 <h3>4. Peer review of submitted Python Package begins<a class="headerlink" href="#peer-review-of-submitted-python-package-begins" title="Permalink to this heading">#</a></h3>
-<p>Once we have an editor and 2 reviewers on board, review begins. <strong>Reviewers have 3 weeks to return a review.</strong> To do this
+<p>Once we have an editor and 2 reviewers on board, review begins. <strong>Reviewers have 3 weeks to return a review.</strong> To do this,
 they will use our reviewer template in the <a class="reference internal" href="../how-to/reviewer-guide.html"><span class="doc std std-doc">reviewer guide</span></a> and paste that, filled out, into the issue.</p>
 <p>TIME: ~3 weeks</p>
 </section>
@@ -612,20 +627,20 @@ they will use our reviewer template in the <a class="reference internal" href=".
 <h3>5. Author responds to reviews<a class="headerlink" href="#author-responds-to-reviews" title="Permalink to this heading">#</a></h3>
 <p>At this point the authors should respond to the review. We prefer that <strong>authors
 respond within 2 weeks of the submitted review</strong>. We also understand that it may
-take longer to actually implement the changes requested in the review. But we
-request that authors respond to reviews to acknowledge
+take longer to actually implement the changes requested in the review. However, we
+kindly request that authors respond to reviews to acknowledge
 that they have seen them.</p>
 <p>The reviewers are encouraged to open pull requests and issues to help the
 maintainers update their package.</p>
 <p><em>Often there is some back and forth between reviewers and maintainers at this step.</em></p>
 <p>There is no specified duration for this period. Rather as long as all
-parties are responsive within 2 weeks the review shall continue until the author has completed work addressing the reviews.</p>
+parties are responsive within 2 weeks, the review shall continue until the author has completed work to address the reviews.</p>
 </section>
 <section id="package-acceptance">
 <h3>6. Package acceptance<a class="headerlink" href="#package-acceptance" title="Permalink to this heading">#</a></h3>
 <p>Once the maintainers have completed updating the package, the assigned editor
 will ask the reviewers if they are happy with changes made. At this point the
-editor performs one last check on the package. And accepts it if that is appropriate.</p>
+editor performs one last check on the package and accepts it if that is appropriate.</p>
 <p>Now, there are a few final cleanup activities including:</p>
 <ul class="simple">
 <li><p>Adding the pyOpenSci peer-reviewed badge to the package README file.</p></li>
@@ -689,8 +704,8 @@ a Python package for pyOpenSci.</p>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-pencil sd-mr-1" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M17.263 2.177a1.75 1.75 0 012.474 0l2.586 2.586a1.75 1.75 0 010 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 01-.699.409l-5.523 1.68a.75.75 0 01-.935-.935l1.673-5.5a1.75 1.75 0 01.466-.756L14.476 4.963l2.787-2.786zm-2.275 4.371l-10.28 9.813a.25.25 0 00-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 00.1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 000-.354l-2.586-2.586a.25.25 0 00-.354 0L16.061 5.5 19 8.44z"></path></svg> ✨ Editor in Chief Guide</div>
-<p class="sd-card-text">The Editor in Chief is a rotating position within pyOpenSci held by members
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-pencil sd-mr-1" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M17.263 2.177a1.75 1.75 0 012.474 0l2.586 2.586a1.75 1.75 0 010 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 01-.699.409l-5.523 1.68a.75.75 0 01-.935-.935l1.673-5.5a1.75 1.75 0 01.466-.756L14.476 4.963l2.787-2.786zm-2.275 4.371l-10.28 9.813a.25.25 0 00-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 00.1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 000-.354l-2.586-2.586a.25.25 0 00-.354 0L16.061 5.5 19 8.44z"></path></svg> ✨ Editor in chief Guide</div>
+<p class="sd-card-text">The editor in chief is a rotating position within pyOpenSci held by members
 of the pyOpenSci editorial board. Learn more about the processes involved with
 being an editor in chief for pyOpenSci.</p>
 </div>
@@ -709,11 +724,10 @@ being an editor in chief for pyOpenSci.</p>
               
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="how-review-works.html"
@@ -733,10 +747,7 @@ being an editor in chief for pyOpenSci.</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -754,7 +765,7 @@ being an editor in chief for pyOpenSci.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyopensci-open-peer-review-steps">pyOpenSci open peer review steps</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-0-optional-author-submits-pre-submission-inquiry">Step 0. <em>optional</em> : Author submits pre-submission inquiry</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#author-submits-their-package-for-review">1. Author submits their package for review</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief-reviews-package-submission">2. Editor in Chief reviews package submission</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief-reviews-package-submission">2. Editor in chief reviews package submission</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-finds-reviewers-for-package">3. Editor finds reviewers for package</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#peer-review-of-submitted-python-package-begins">4. Peer review of submitted Python Package begins</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#author-responds-to-reviews">5. Author responds to reviews</a></li>
@@ -802,8 +813,8 @@ being an editor in chief for pyOpenSci.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -822,10 +833,11 @@ being an editor in chief for pyOpenSci.</p>
     </div>
   
   
+  
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.2.
 </p></div>
       
     </div>
