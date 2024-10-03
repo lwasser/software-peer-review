@@ -8,8 +8,19 @@ our editors or to post a question on our [discourse forum](https://pyopensci.dis
 ```
 
 Please be respectful and kind to the authors in your reviews. Our
-[code of conduct](https://www.pyopensci.org/governance/CODE_OF_CONDUCT.html) is mandatory for everyone involved in our
+[code of conduct](https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html) is mandatory for everyone involved in our
 review process.
+
+```{admonition} Not yet a pyOpenSci reviewer? Join us!
+:class: note
+
+We could use your help! Fill out our reviewer form.
+We will contact you if we have a package that we need reviewers for.
+It’s OK if you’ve never reviewed a package before! We’ll walk you through it.
+
+[Sign-up Here (Google Form)](https://forms.gle/GHfxvmS47nQFDcBM6)
+```
+
 
 ## A guide for new reviewers
 
@@ -94,7 +105,7 @@ in the review template, please also provide general comments addressing the foll
   * Are there performance improvements that could be made?
   * Are functions and arguments named to work together to form a common, logical programming API that is easy to read, and autocomplete?
 
-* Does the package comply with the pyOpenSci packaging guide](https://www.pyopensci.org/python-package-guide)?
+* Does the package comply with [the pyOpenSci packaging guide](https://www.pyopensci.org/python-package-guide)?
 
 * Are there user interface improvements that could be made?
 * Is the documentation (installation instructions/vignettes/examples/demos) clear and sufficient?
