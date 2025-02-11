@@ -34,7 +34,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
@@ -925,7 +925,6 @@ If you have any feedback for us about the review process please feel free to sha
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Don’t forget to change the status tag of the issue to <code class="docutils literal notranslate"><span class="pre">6/pyOS-approved</span></code> 🚀🚀🚀`.</p></li>
 <li><p>If the package moves on to JOSS - be sure to continue to update the labels to track the JOSS review process (but do NOT remove the <code class="docutils literal notranslate"><span class="pre">6/pyOS-approved</span></code> label).</p></li>
 <li><p>Update the YAML at the top of the issue with the:</p>
 <ul>
@@ -940,13 +939,22 @@ Version accepted: UPDATE-THIS-TBD
 Date accepted (month/day/year): UPDATE-THIS-TBD
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>Once the YAML is updated, change the status tag of the issue to <code class="docutils literal notranslate"><span class="pre">6/pyOS-approved</span></code> 🚀🚀🚀`.</p>
+<ul>
+<li><p>The <a class="reference external" href="https://www.pyopensci.org/python-packages.html">listing on the PyOpenSci website</a> is updated by a cron job that parses the YAML in all issues with the tag <code class="docutils literal notranslate"><span class="pre">6/pyOS-approved</span></code> 🚀🚀🚀`, so a new package might take a few days to appear; in particular, if there are formatting errors in the YAML that need to be corrected.</p></li>
+<li><p>Editors should be able to manually trigger the <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-contribs-reviews.yml">cron job</a> and/or check the output of the last run to see if there are any YAML formatting errors.</p></li>
+<li><p>Other “after review” tasks like the post-review survey can be done after the package is accepted; the cron job does not depend on them.</p></li>
+</ul>
+</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Archive</span></code> refers to an archive created through a release. You can use zenodo to create this archive and provide the package with a citable DOI. If zenodo is used, please add the Zenodo link and/or badge link here.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Version</span></code> refers to the final package version that was accepted by pyOpenSci.
-This is the final version as presented after all feedback from the r
-reviews has been considered and implemented</p></li>
+This is the final version as presented after all feedback from the
+reviews has been considered and implemented.</p></li>
 </ul>
 </div>
 </section>
@@ -1156,7 +1164,7 @@ interested in this option, consider doing the following:
 
   <p class="copyright">
     
-      © Copyright 2024, pyOpenSci.
+      © Copyright 2025, pyOpenSci.
       <br/>
     
   </p>
