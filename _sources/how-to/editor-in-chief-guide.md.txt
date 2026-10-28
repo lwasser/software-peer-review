@@ -96,7 +96,7 @@ responding to out-of-scope pre-submissions.
 If the EiC has limited time to handle [pre-review checks](pre-review-checks) for a package, a conflict of interest, or lacks relevant expertise, they may ask another editor to perform initial checks on a package at any time.
 :::
 
-## Editor in Chief pre-review submission checklist
+## EiC pre-submission inquiry checklist
 
 The EiC is also responsible for determining the scope of packages submitted via a pre-submission inquiry.
 
@@ -204,7 +204,7 @@ Once you’ve selected an editor:
 If there isn't an available editor with relevant expertise for a review, work with the [Peer
 Review Lead](https://www.pyopensci.org/handbook/governance/structure.html#peer-review-lead) to recruit a guest editor or onboard someone new.
 
-Follow the [onboarding guide](onboarding-guide.md), and complete the full
+Follow the [onboarding guide](onboard-editors.md), and complete the full
 [onboarding process](onboarding-a-new-editor) to ensure they have:
 
 * GitHub access
@@ -213,7 +213,7 @@ Follow the [onboarding guide](onboarding-guide.md), and complete the full
 
 [Share this document with any new editor to help them get started.](https://docs.google.com/document/d/1UfG1Fe5wSiEAObvqNMT4etZ5sx7QXzW0f8mozKyK1NE/edit?tab=t.0)
 
-See the [editor guide](editors-guide.md) for more on an editor’s responsibilities. Once the editor is assigned, your
+See the [editor description](editor-description.md) for more on an editor’s responsibilities. Once the editor is assigned, your
 work on the review is complete, and they will now begin identifying reviewers.
 
 :::
@@ -222,7 +222,7 @@ work on the review is complete, and they will now begin identifying reviewers.
 :class: important
 
 Inclusion is core to the pyOpenSci mission. It's important to have an
-editorial team comprised of an editor + 2 reviewers from different backgrounds and identities to enrich the review process.
+editorial team with diverse backgrounds and identities to enrich the review process. Standard reviews usually involve an editor plus two reviewers, while publication fast-track reviews may use one reviewer.
 
 As you select an editor (and guide that editor in finding reviewers),
 seek diversity in the team supporting package review. [Specifically, reviewers and the editor should have a mix of gender identities whenever possible](reviewer-diversity). pyOpenSci [also supports mentoring new reviewers and editors if needed!](review-mentorship)

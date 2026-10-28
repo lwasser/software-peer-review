@@ -94,7 +94,7 @@ Through our partnership, we have two options when selecting an editor.
 
 - If we have a domain specific editor who is not authorized by your community to make this decision, we can ask someone from your community to make the decision around affiliated status. Once the decision is made, the review can proceed as normal.
 
-3. Once affiliated status has been determined, the editor finds 2 reviewers to begin the review.
+3. Once affiliated status has been determined, the editor finds reviewers to begin the review. Standard reviews typically have two reviewers, while publication fast-track reviews may have one.
 4. The review begins and is a conversation between the package maintainer and the reviewer with the goal of improving the package usability and quality.
 5. Once the package is accepted by pyOpenSci, authors can opt to be published in the Journal of Open Source Software (JOSS) if their package is in scope for JOSS. JOSS will accept the pyOpenSci review and will only review the JOSS paper. If the package is within JOSS's scope, the JOSS fast-track process is normally a quick final step.
 
@@ -124,7 +124,7 @@ it might take a bit longer to find the right people to begin the review.
 
 pyOpenSci maintains a reviewer database with individuals who have signed
 up using our [reviewer sign-up form](https://forms.gle/GHfxvmS47nQFDcBM6).
-Our goal is to assign two reviewers for each package. Typically, one
+Our goal is to assign two reviewers for each standard package review. Typically, one
 reviewer possesses domain-specific expertise while the second may
 focus on usability, installation, documentation, or packaging
 infrastructure, without necessarily needing domain expertise.
@@ -136,8 +136,8 @@ and identities.
 ## Frequently asked questions
 
 Below is a list of questions that we get asked about our community partnerships.
-If you have a question that is now answered here, feel free to ask it on the
-[pyOpenSci discourse forum](https://pyopensci.discourse.group/).
+If you have a question that is not answered here, feel free to post it on our
+[GitHub Discussions](https://github.com/orgs/pyOpenSci/discussions).
 
 ### General peer review questions
 
@@ -145,7 +145,8 @@ If you have a question that is now answered here, feel free to ask it on the
 :animate: fade-in-slide-down
 
 We are always open to new partners. Please feel free to ask questions or to
-leave a post on [our discourse forum](https://pyopensci.discourse.group/). We
+leave a post on our [GitHub Discussions](https://github.com/orgs/pyOpenSci/discussions
+). We
 can connect with you from there. You can also email us directly at
 admin at pyopensci.org.
 :::
@@ -199,7 +200,7 @@ editor, who is a member of your community, will evaluate the package at the begi
 :animate: fade-in-slide-down
 
 You can also access are most recent list of accepted packages using this [.yml file which drives
-our website here](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/packages.yml).
+our website here](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/packages.yml).
 This file is updated using a cron job several times a month and can be filtered by your specific community to support your website development workflow. [The full listing of packages can be found here.](https://www.pyopensci.org/python-packages.html)
 :::
 
@@ -213,7 +214,7 @@ packages. To achieve this, we monitor repository activity for all
 our packages to detect any signs of becoming unmaintained.
 
 However, pyOpenSci does not conduct full re-reviews, involving the Editor-in-
-Chief, Editor, and two reviewers, for packages that have already been
+Chief, Editor, and a full reviewer team, for packages that have already been
 accepted.
 
 :::{note}

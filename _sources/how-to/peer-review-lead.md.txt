@@ -15,7 +15,7 @@ The Peer Review Lead is responsible for keeping the software review process movi
 
 * Keeping the review process moving forward by checking in on stalled reviews and supporting the editorial team.
 * Ensuring a diverse and active editorial board.
-* Onboarding and offboarding editors (see the [Onboarding & Offboarding Guide](onboarding-guide)).
+* Onboarding and offboarding editors (see the [Onboarding & Offboarding Guide](onboard-editors)).
 * Making updates to the [pyOpenSci Software Peer Review Guide](https://www.pyopensci.org/software-peer-review/) as needed.
 * Updating [software peer review policies](https://www.pyopensci.org/software-peer-review/our-process/policies.html) as needed.
 * Helping editors find reviewers as necessary.
@@ -60,7 +60,7 @@ If a review has been quiet for over a month, it's a good idea to check in on thi
 
 Also, check out the days open column. Keep an eye out for reviews that have been open for longer than 6 months. In some cases, you may want to check in with the editor to see how things are going and whether there is a way to move the review forward.
 
-In some cases a review hasn't moved forward because the editor is struggling to find reviewers. [This page](finding-reviewers) will help you with some tips on helping an editor find reviewers. Sometimes this is as easy as posting in our pyOpenSci #software-review channel. Other times we might need to run a call for reviewers.
+In some cases a review hasn't moved forward because the editor is struggling to find reviewers. [This page](finding-reviewers.md) will help you with some tips on helping an editor find reviewers. Sometimes this is as easy as posting in our pyOpenSci #software-review channel. Other times we might need to run a call for reviewers.
 
 ### 4. Check the reviews seeking editors section
 
@@ -76,4 +76,4 @@ Once a year, the Peer Review Lead should check in with the editorial team to ens
 * Posting in the `#private-editorial-team` Slack channel, or
 * Opening a GitHub issue in the private editorial repository
 
-Ask editors to confirm they are still able to participate and manage reviews. If an editor is no longer engaged or available, work with them to gracefully offboard them following the process in the [Onboarding & Offboarding Guide](onboarding-guide#off-boarding-an-editor).
+Ask editors to confirm they are still able to participate and manage reviews. If an editor is no longer engaged or available, work with them to gracefully offboard them following the process in the [Onboarding & Offboarding Guide](onboard-editors).
